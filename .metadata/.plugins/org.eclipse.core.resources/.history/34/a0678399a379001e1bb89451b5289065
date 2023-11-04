@@ -1,0 +1,17 @@
+package WebPageAutomation;
+
+import org.openqa.selenium.TakesScreenshot;
+
+import baseMethods.OpenBrowser;
+import utilityMethods.TakeScreenshot;
+
+public class CheckingOnly {
+
+	public static void main(String[] args) {
+		
+		OpenBrowser.launchEdge("https://www.flipkart.com/");
+		
+		OpenBrowser.launchChrome("https://www.amazon.in/");
+		
+	}
+}

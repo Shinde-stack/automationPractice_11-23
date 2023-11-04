@@ -1,0 +1,18 @@
+package utilityMethods;
+
+import java.io.File;
+
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+public class Parametrization {
+	
+	public static void readSheet () {
+		
+		String filePath= System.getProperty("user.dir")+"src"+File.separator+"test"+File.separator+"resources"+File.separator+"seleniumData";
+		File sheetFile = new File (filePath);
+		
+		WorkbookFactory
+		
+	}
+
+}

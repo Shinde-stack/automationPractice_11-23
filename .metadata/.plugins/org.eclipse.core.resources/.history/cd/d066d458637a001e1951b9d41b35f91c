@@ -1,0 +1,18 @@
+package WebPageAutomation;
+
+
+import utilityMethods.Parametrization;
+
+public class CheckingOnly {
+	
+	
+
+	public static void main(String[] args) throws InterruptedException {
+		
+	Parametrization.readSheet("idAndPass",2,2);
+	Parametrization.readSheet_02("idAndPass");
+	
+	}
+	
+	
+}

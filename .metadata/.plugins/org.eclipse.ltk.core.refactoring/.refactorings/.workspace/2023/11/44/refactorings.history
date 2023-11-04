@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;webPageAutomation&apos; to &apos;webPageAutomation_01&apos;" description="Rename resource &apos;webPageAutomation&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/webPageAutomation" name="webPageAutomation_01" stamp="1698902511883" updateReferences="true"/>
+</session>

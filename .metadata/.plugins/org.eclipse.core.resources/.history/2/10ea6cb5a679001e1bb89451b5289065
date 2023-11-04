@@ -1,0 +1,15 @@
+package WebPageAutomation;
+
+
+import baseMethods.OpenBrowser;
+
+public class CheckingOnly {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		OpenBrowser.launchEdge("https://www.flipkart.com/","flip sc");
+		
+//		OpenBrowser.launchChrome("https://www.amazon.in/");
+		
+	}
+}

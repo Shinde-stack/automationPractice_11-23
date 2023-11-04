@@ -1,0 +1,34 @@
+package baseMethods;
+
+import java.io.File;
+import java.util.concurrent.TimeUnit;
+
+public class OpenBrowser {
+
+	public static void launchEdge(String urlToOpen) {
+
+//1. set the system property		
+		System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + File.separator + "src"
+				+ File.separator + "main" + File.separator + "resources" + File.separator + "...");
+
+//2.upcast constructor of edge driver class to the web driver interface
+
+		WebDriver driver = new EdgeDriver();
+		driver.get(urlToOpen);
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+
+	}
+
+	public static void launchChrome(String urlToOpen) {
+
+		DriverManager.chrome.setUp();
+
+		WebDriver driver = new ChromeDriver();
+		driver.get(urlToOpen);
+		driver.manage().timeunits().implicitlyWait(500, TimeUnit.MILLISECONDS);
+		driver.manage().window().maximize();
+
+	}
+
+}

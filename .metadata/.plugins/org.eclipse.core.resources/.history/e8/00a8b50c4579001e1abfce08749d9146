@@ -1,0 +1,16 @@
+package baseMethods;
+
+import java.io.File;
+
+public class OpenBrowser {
+
+	public static void openEdge () {
+		
+//1. set the system property		
+		System.setProperty("webdriver.edge.driver",
+				          System.getProperty("user.dir")+File.separator+"src"+File.separator+"main"+
+		                  File.separator+"resources"+File.separator+"...");
+//2.upcast constructor of edge driver class to the web driver interface
+		WebDriver driver= new EdgeDriver();
+	}
+}
